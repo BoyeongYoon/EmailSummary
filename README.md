@@ -1,7 +1,7 @@
 **Requirements**  
 
 - Programming Language: python ([Download](https://www.python.org/downloads/))
-- openpyxl - A Python library to read/write Excel (To install: ```pip install openpyxl```)
+- openpyxl - A Python library to read/write Excel (To install: ```$ pip install openpyxl```)
 - Files: email_summary.py, vba_programmer.xlsx
 
 <br>
