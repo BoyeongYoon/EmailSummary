@@ -13,5 +13,6 @@
 python3 email_summary.py
 ```
 
-
+**Resources**  
+[Working with Excel Spreadsheets in Python](https://www.geeksforgeeks.org/working-with-excel-spreadsheets-in-python/)  
 
