@@ -1,7 +1,7 @@
 **Requirements**  
 
-- python: [Download](https://www.python.org/downloads/)
-- openpyxl: ```pip install openpyxl```
+- python ([Download](https://www.python.org/downloads/))
+- openpyxl (```pip install openpyxl```)
 - Files: email_summary.py, vba_programmer.xlsx
 
 <br>
