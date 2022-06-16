@@ -23,11 +23,13 @@ python3 email_summary.py
 # Sample Input & Output
 
 - Input  
+
   ![Screen Shot 2022-06-16 at 12 02 08 AM](https://user-images.githubusercontent.com/30683150/173988579-d4a79054-6988-4d45-9056-9c7de3735738.png)
 
 <br>
 
 - Output  
+
   ![Screen Shot 2022-06-16 at 12 09 32 AM](https://user-images.githubusercontent.com/30683150/173989361-c2a27a90-5955-468b-8906-098dba2157d0.png)
 
 <br>
