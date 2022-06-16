@@ -27,6 +27,7 @@ Output is going be in the new excel file named **email_summary.xlsx**
 <br>
 
 **Output**  
+![Screen Shot 2022-06-16 at 12 04 48 AM](https://user-images.githubusercontent.com/30683150/173988923-1273580a-02d1-4ca2-bfa2-f35d2e491c33.png)
 
 
 <br>
