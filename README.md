@@ -13,6 +13,8 @@
 python3 email_summary.py
 ```
 
+Output is going be in the new excel file named **email_summary.xlsx**  
+
 <br>
 <br>
 <br>
