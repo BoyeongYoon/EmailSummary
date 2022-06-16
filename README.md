@@ -21,14 +21,13 @@ Output is going be in the new excel file named **email_summary.xlsx**
 
 # Sample Input & Output
 
-**Input**  
+## Input
 ![Screen Shot 2022-06-16 at 12 02 08 AM](https://user-images.githubusercontent.com/30683150/173988579-d4a79054-6988-4d45-9056-9c7de3735738.png)
 
 <br>
 
-**Output**  
+## Output
 ![Screen Shot 2022-06-16 at 12 04 48 AM](https://user-images.githubusercontent.com/30683150/173988923-1273580a-02d1-4ca2-bfa2-f35d2e491c33.png)
-
 
 <br>
 <br>
