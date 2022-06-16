@@ -1,15 +1,44 @@
+"""
+Author: Nancy Yoon (boyeong.nancy.yoon@gmail.com)
+Date: June 16, 2022
+
+Objectives: Convert the email list into an email summary text for each CustomerID and display the result
+Constraints:
+	1. The email summary text must conform to the following syntax:
+		Primary_email_1[;Primary_email_2 to N][;Non_Primary_email_1 to N][;+ X more]
+		where N and X are non-zero positive integer
+	2. Primary emails must be displayed before the non primary emails
+	3. The emails should be sorted in alphabetical order within each group (primary/non primary)
+	4. The emails should be separated by a semi-colon (;)
+	5. The email summary must be no more than 64 characters
+	6. If the email summary text exceeds 64 characters, the emails should be removed from the text and be converted into [;+ X more]
+	7. The email summary text should display as many email addresses as possible
+
+How the program is implemented:
+	(1) Open the given excel file and read data in it
+	(2) Create a dictionary
+			e.g. email_dict = {customer_id: [[primary email address], [non-primary email]]}
+	(3) Sort each list alphabetically
+	(4) Create an email summary
+			e.g. Primary_email_1[;Primary_email_2 to N][;Non_Primary_email_1 to N][;+ X more]
+	(5) Write an output in new excel file named output.xlsx
+"""
+
+
+
+# (1) Open the given excel file and read data in it
 # openpyxl = a python library to read/write Excel
 import openpyxl 
 from openpyxl import Workbook
 from openpyxl.styles import Font
 
-# open the excel file
 path = "input.xlsx"
 wb_obj = openpyxl.load_workbook(path)
 sheet_obj = wb_obj.active
 
 
 
+# (2) Create a dictionary
 # email_dict = {customer_id: [[primary email address], [non-primary email]]}
 email_dict = {}
 
@@ -22,6 +51,7 @@ for i in range(2, sheet_obj.max_row):
 	email = cell_2.value
 	primary = cell_3.value
 
+
 	if customer_id not in email_dict:
 		email_dict[customer_id] = [[], []]
 
@@ -32,19 +62,18 @@ for i in range(2, sheet_obj.max_row):
 
 
 
-# sort alphabetically each list of email address
+# (3) Sort each list of email address (primary/non-primary) alphabetically
 for email in email_dict.values():
-  email[0].sort() # sort the list of primary email addresses
-  email[1].sort() # sort the list of non-primary email addresses
+  email[0].sort() # sort a list of primary email addresses
+  email[1].sort() # sort a list of non-primary email addresses
 
 for customer_id, email in email_dict.items():
   email_dict[customer_id] = email[0] + email[1]
 
 
 
-# make string of email summary
-# e.g. Primary_email_1[;Primary_email_2 to N][;Non_Primary_email_1 to N][;+ X more]
-
+# (4) Create an email summary
+#	e.g. Primary_email_1[;Primary_email_2 to N][;Non_Primary_email_1 to N][;+ X more]e]
 data = (("CustomerID", "EmailSummary"),)
 
 for customer_id, email_list in email_dict.items():
@@ -60,16 +89,17 @@ for customer_id, email_list in email_dict.items():
 
 
 
-# Writing to Spreadsheets
+# (5) Write an output in new excel file named output.xlsx
 workbook = Workbook()
 workbook.save(filename="email_summary.xlsx")
 
 wb = openpyxl.load_workbook("email_summary.xlsx")
 sheet = wb.active
 
-for row in data:
+for row in data: # e.g. row = alabama email1@alabama.com;email2@alabama.com; + 3 more
 	sheet.append(row)
 
+# Make bold font for the first row - CustomerID, EmailSummary
 sheet['A1'].font = Font(bold=True)
 sheet['B1'].font = Font(bold=True)
 wb.save("output.xlsx")
