@@ -32,6 +32,11 @@ python3 email_summary.py
 
   ![Screen Shot 2022-06-16 at 12 09 32 AM](https://user-images.githubusercontent.com/30683150/173989361-c2a27a90-5955-468b-8906-098dba2157d0.png)
 
+  --> Last row is different with given output 
+  Given Output of the Last Row | Output
+  --- | ---
+  delaware email2@delaware.com;email7@delaware.com;+ 2 more | delaware email2@delaware.com;email7@delaware.com;email8@delaware.com;+ 1 more
+  
 <br>
 <br>
 <br>
