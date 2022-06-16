@@ -35,10 +35,8 @@ python3 email_summary.py
   --> Last row is different with given output 
   - Given output: email2@delaware.com;email7@delaware.com;**+ 2 more**
   - Output: email2@delaware.com;email7@delaware.com;**email8@delaware.com;+ 1 more**
-  Given output | Output
-  --- | ---
-   | 
-  
+    ... email2@delaware.com;email7@delaware.com;email8@delaware.com   _59 characters <= 64 characters_  
+
 <br>
 <br>
 <br>
