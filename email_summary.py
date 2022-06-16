@@ -91,9 +91,9 @@ for customer_id, email_list in email_dict.items():
 
 # (5) Write an output in new excel file named output.xlsx
 workbook = Workbook()
-workbook.save(filename="email_summary.xlsx")
+workbook.save(filename="output.xlsx")
 
-wb = openpyxl.load_workbook("email_summary.xlsx")
+wb = openpyxl.load_workbook("output.xlsx")
 sheet = wb.active
 
 for row in data: # e.g. row = alabama email1@alabama.com;email2@alabama.com; + 3 more
