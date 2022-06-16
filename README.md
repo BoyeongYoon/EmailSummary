@@ -8,6 +8,7 @@
 <br>
 <br>
 
+
 # How to run
 ```
 python3 email_summary.py
@@ -27,7 +28,7 @@ Output is going be in the new excel file named **email_summary.xlsx**
 <br>
 
 ## Output
-![Screen Shot 2022-06-16 at 12 04 48 AM](https://user-images.githubusercontent.com/30683150/173988923-1273580a-02d1-4ca2-bfa2-f35d2e491c33.png)
+![Screen Shot 2022-06-16 at 12 09 32 AM](https://user-images.githubusercontent.com/30683150/173989361-c2a27a90-5955-468b-8906-098dba2157d0.png)
 
 <br>
 <br>
